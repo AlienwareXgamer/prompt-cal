@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+<meta charset="UTF-8">   
+<meta http-equiv="X-UA-Compatible" content="IE=edge">   
+<meta name="viewport" content="width=device-width, initial-scale=1.0">   
+<title>Prompt calculator</title>      
+</head><body>    
+<H3 id="Test" align = center></H3>
+
+    <script type="text/javascript">
+function Calculate() {  var num1,num2,answer,operator;
+
+  operator=prompt
+  ("Operation to perform? (1) + (2) - (3) * (4) /"); 
+  num1=prompt("Enter First Number (default is zero):");
+  num2=prompt("Enter Second Number (default is zero):");    
+  if(operator=="1"){    answer=Number(num1)+Number(num2);
+  }  else if(operator=="2"){    answer=Number(num1)-Number(num2);
+  }  else if(operator=="3"){    answer=Number(num1)*Number(num2);
+  }  else if(operator=="4"){    answer=Number(num1)/Number(num2);      
+  }  else if(operator=!null){    answer="Invalid Operation."  
+  }  else if(num1=!null){    answer="Invalid Operation."  
+  }  else if(num2=!null){    answer="Invalid Operation." 
+  }  return answer;    
+  }document.getElementById("Test").innerHTML = Calculate();
+
+
+    
+
+</script>    </body></html>
+
